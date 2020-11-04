@@ -1,0 +1,71 @@
+{
+
+  "miscObjects": [
+
+
+    {
+      "field": "value",
+
+      "arrayField": [
+        "value1",
+        "value2"
+      ],
+
+      "objectField": {
+        "field": "some other value"
+      },
+
+      # This doesn't work in JSON
+      "field with nested object": "value" {
+        "nested field": "some other value"
+      },
+
+      "field2": "value",
+      "_field2": {
+        "nested field": "nested value"
+      }
+
+
+
+    }
+    
+    ,
+    {
+      "resourceType": "Patient",
+      "id": "patientInstance",
+      "name": "John Doe",
+      "nameObject": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "name": [
+        "John Doe",
+        "Jane Doe"
+      ],
+      "name": [
+        {
+          "firstName": "John",
+          "lastName": "Doe"
+        },
+        {
+          "...": "more names"
+        }
+      ]
+    },
+
+    {
+      "resourceType": "PatientFirstNameDefinition",
+      "path": "Patient.nameObject.firstName",
+      "type": "String",
+      "minLenght": 0,
+      "maxLength": 100
+    },
+    {
+      "resourceType": "PatientFirstNameConstraint",
+      "path": "Patient.nameObject.firstName",
+      "BasedOn": "PatientFirstNameDefinition",
+      "minLenght": 1,
+      "maxLength": 50
+    }
+  ]
+}

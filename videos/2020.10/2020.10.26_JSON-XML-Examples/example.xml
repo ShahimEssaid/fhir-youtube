@@ -1,0 +1,52 @@
+<RootElement>
+
+  <miscElements>
+
+    <xmlSyntax>
+      <field>some value</field>
+
+      <field attributeName="some value"></field>
+      <field value="some value"/>
+
+      <field value="some value">
+        <nestedElement>something else</nestedElement>
+      </field>
+
+      <field>value
+        <nestedElement>something else</nestedElement>
+      </field>
+
+    </xmlSyntax>
+
+    <Patient id="patientInstance">
+      <name firstName="John" lastName="Doe">
+            John Doe
+        <firstName>John</firstName>
+        <firstName value="John" />
+        <lastName>Doe</lastName>
+      </name>
+      <name>
+      </name>
+      <names>
+        <name/>
+        <name/>
+      </names>
+    </Patient>
+
+    <PatientFirstNameDefinition>
+      <path>Patient.name.firstName</path>
+      <type>String</type>
+      <minLength>0</minLength>
+      <maxLength>100</maxLength>
+    </PatientFirstNameDefinition>
+
+    <PatientFirstNameConstraint>
+      <path>Patient.name.firstName</path>
+      <basedOn>PatientFirstNameDefinition</basedOn>
+      <minLength>1</minLength>
+      <maxLength>50</maxLength>
+    </PatientFirstNameConstraint>
+
+  </miscElements>
+
+</RootElement>
