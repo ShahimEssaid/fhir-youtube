@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+
+
+    {
+      "fileMatch": [
+        "/videos/examples/fhir-ig-demo/ig_root/*.json"
+      ],
+      "url": "http://www.hl7.org/fhir/R4/fhir.schema.json"
+    }
+  ]
+}
