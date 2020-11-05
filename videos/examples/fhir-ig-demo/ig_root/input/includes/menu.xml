@@ -1,0 +1,18 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">QA<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="qa.html">QA Full</a>
+      </li>
+      <li>
+        <a href="qa.min.html">QA Minimal</a>
+      </li>
+    </ul>
+  </li>
+</ul>      

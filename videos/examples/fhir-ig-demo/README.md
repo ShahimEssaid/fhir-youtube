@@ -1,4 +1,4 @@
-# IG Example 1 plalylist
+# FHIR IG demo playlist
 
 The following subsections are based on the videos in the playlist. Each subsection outlines the steps for that video, links to resources, etc.
 
@@ -27,9 +27,9 @@ The following subsections are based on the videos in the playlist. Each subsecti
   * The `input/resources` and `input/includes` folders
   * Populate the ig.json file with minimally needed content.
   * Create the `input/includes/menu.xml` file
-* Open "Command Prompt" or "Windows PowerShell" and change to the project's directory by using the `cd` command.
-  * Run `java -jar publisher_version.jar -ig ig_root/ig.json`
-* Published site will be under `ig_root/output`
+* Open "Command Prompt" or "Windows PowerShell" and change to the project's `fhir-ig-demo` directory by using the `cd` command.
+  * Run `java -jar publisher_version.jar -ig ig.ini`
+* The published site will be under `ig_root/output`
   * No index.html is created by default.
   * Open the toc.html file instead.
 * See the following resources for additional documentation.
@@ -37,7 +37,3 @@ The following subsections are based on the videos in the playlist. Each subsecti
   * https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation
   * https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   * https://build.fhir.org/ig/FHIR/ig-guidance/index.html
-  * 
-
-
-

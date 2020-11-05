@@ -1,7 +1,6 @@
 {
   "json.schemas": [
-
-
+    
     {
       "fileMatch": [
         "/videos/examples/fhir-ig-demo/ig_root/*.json"

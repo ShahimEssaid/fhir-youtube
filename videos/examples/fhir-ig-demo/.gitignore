@@ -1,2 +1,5 @@
 *.jar
-_attic/
+ig_root/input-cache
+ig_root/output
+ig_root/temp
+ig_root/template
