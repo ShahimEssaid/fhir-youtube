@@ -1,0 +1,15 @@
+The following is the error message when a resource reference in the IG is not found. It shows the file patters the publisher tries to find a file for the resource reference, when the reference is in the form of a Type/id.
+
+Publishing Content Failed: 
+Unable to find the source file for CodeSystem/cs-ks: not specified, so tried 
+CodeSystem-cs-ks.xml, 
+cs-ks.CodeSystem.xml, 
+CodeSystem-cs-ks.json, 
+CodeSystem/cs-ks.xml, 
+CodeSystem/cs-ks.json, 
+cs-ks.xml, and 
+cs-ks.json 
+(and lowercase resource name variants) 
+in dirs [
+  C:\Users\essaids\git\gh\SE\fhir-youtube\videos\examples\fhir-ig-demo\ig_root\input, 
+  C:\Users\essaids\git\gh\SE\fhir-youtube\videos\examples\fhir-ig-demo\ig_root\input\resources

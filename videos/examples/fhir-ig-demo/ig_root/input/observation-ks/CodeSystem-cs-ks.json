@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-ks",
+  "extension": [
+    {
+      "url": "http://www.example.com/phenopackets/refpage",
+      "valueUrl": "https://phenopackets-schema.readthedocs.io/en/latest/karyotypicsex.html"
+    }
+  ],
+  "status": "draft",
+  "random": "value",
+  "version": "0.0.2",
+  "versionNeeded": true,
+  "content": "complete",
+  "url": "https://fhir-ig-demo/CodeSystem/cs-ks",
+  "name": "CsKs",
+  "title": "KaryotypicSex CodeSystem",
+  "property": [
+    {
+      "code": "Ordinal",
+      "description": "The order of the value in the enumeration",
+      "type": "integer"
+    }
+  ],
+  "concept": [
+    {
+      "code": "0",
+      "display": "UNKNOWN_KARYOTYPE",
+      "definition": "Untyped or inconclusive karyotyping",
+      "property": [
+        {
+          "code": "Ordinal",
+          "valueInteger": 0
+        }
+      ]
+    },
+    {
+      "code": "1",
+      "display": "XX",
+      "definition": "Female",
+      "property": [
+        {
+          "code": "Ordinal",
+          "valueInteger": 1
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "XY",
+      "definition": "Male",
+      "property": [
+        {
+          "code": "Ordinal",
+          "valueInteger": 2
+        }
+      ]
+    }
+  ]
+}

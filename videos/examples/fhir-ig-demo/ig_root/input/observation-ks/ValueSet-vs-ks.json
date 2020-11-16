@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ks",
+  "status": "draft",
+  "url": "https://fhir-ig-demo/ValueSet/vs-ks",
+  "name": "VsKs",
+  "title": "KaryotypicSex ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir-ig-demo/CodeSystem/cs-ks"
+      }
+    ]
+  }
+}

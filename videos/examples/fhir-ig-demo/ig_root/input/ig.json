@@ -1,17 +1,47 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "fhir-ig-demo",
+  "id": "ig",
   "version": "0.0.1",
-  "url": "https://github.com/ShahimEssaid/fhir-youtube/videos/examples/fhir-ig-demo/ImplementationGuide/fhir-ig-demo",
-  "name": "FhirIgDemo",
+  "url": "https://fhir-ig-demo/ImplementationGuide/ig",
+  "name": "ig",
   "title": "FHIR IG demo",
-  "packageId": "fhir-ig-demo",
+  "packageId": "ig",
   "status": "draft",
   "fhirVersion": [
     "4.0.1"
   ],
   "definition": {
-    "resource": [],
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-ks"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-ks"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/obs-ks"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Observation/ks-eg-1"
+        },
+        "exampleCanonical": "https://fhir-ig-demo/StructureDefinition/obs-ks",
+        "name": "A valid karyotypic sex observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ks-eg-2"
+        },
+        "exampleCanonical": "https://fhir-ig-demo/StructureDefinition/obs-ks",
+        "name": "An invalid karyotypic sex observation"
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
@@ -26,6 +56,14 @@
       {
         "code": "copyrightyear",
         "value": "2020+"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/observation-ks"
       }
     ]
   }

@@ -1,0 +1,14 @@
+{
+  "resourceType": "Observation",
+  "id": "ks-eg-1",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "1",
+        "system": "https://fhir-ig-demo/CodeSystem/cs-ks",
+        "display": "Female"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "obs-ks",
+  "url": "https://fhir-ig-demo/StructureDefinition/obs-ks",
+  "name": "ObsKS",
+  "title": "Karyotypic sex Observation profile",
+  "status": "draft",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCode"
+            }
+          ],
+          "strength": "required",
+          "description": "Code identifying the karyotypic sex of the patient.",
+          "valueSet": "https://fhir-ig-demo/ValueSet/vs-ks"
+        }
+      }
+    ]
+  }
+}

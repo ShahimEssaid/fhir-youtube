@@ -1,0 +1,1 @@
+This folder is for miscellaneous content. For now it's a good place to get JSON Schema support based on the VS Code configuration for this repository. All .json files in this folder have the FHIR JSON Schema support enabled.

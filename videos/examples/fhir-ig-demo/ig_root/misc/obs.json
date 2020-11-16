@@ -1,0 +1,23 @@
+{
+  "text": "Original text/uncoded information",
+  "coding": [
+    {
+      "code": "bos taurus",
+      "display": "Bos taurus",
+      "system": "http://pdc/case/taxon",
+      "version": "PDC's dictionary version" 
+    },
+    {
+      "code": "bos taurus",
+      "display": "Bos taurus",
+      "system": "http://cdm/patient/taxon",
+      "version": "CDM's system version" 
+    },
+    {
+      "code": "NCIT:C161014",
+      "display": "Bos taurus",
+      "system": "http://ncit",
+      "version": "NCIT's 's version" 
+    }
+  ]
+}
